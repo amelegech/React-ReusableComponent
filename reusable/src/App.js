@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Button from './Components/Button';
+import Counter from './Components/Counter';
 
 class App extends React.Component {
   constructor(props){
@@ -16,8 +17,12 @@ class App extends React.Component {
   return (
     <div className="App">
       <h1>Reusable component is one of the basic feature of react</h1>
-      <Button clickabel={this.nameHandler}/> 
+      <Button clickabel={this.nameHandler} color="green" btnName="Click Here"/> 
       Button Use 1:{this.state.name}
+    <Button  color="blue" size = '40px' nameB="Click"/>
+    <p>Use-Case 2:</p>
+    
+    <Counter/>
     </div>
   );
   }
